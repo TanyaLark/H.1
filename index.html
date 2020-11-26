@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Sample Document</title>
+    
+        <link rel="shortcut icon" href="./assets/images/favicon.png">
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+        <link rel="stylesheet" href="./assets/css/font-awesome.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script defer src="./assets/js/main.js"></script>
+    </head>
+    <body>
+       
+        <div class="container min-vh-100 d-flex flex-column">
+            
+            <div class="d-flex flex-row justify-content-between">
+
+                <h1 class='my-4 d-flex align-items-center'>
+                    <i class="far fa-newspaper"></i>
+                    <span>&nbsp;MyNews Inc.</span>
+                </h1>
+
+                <div id="date_pickers" class="wrap d-flex align-items-center"></div>
+
+                <input id="search_query" class='my-4 mx-1' type="text" placeholder="Search query">
+
+                <button type="button" id="button_show" class="btn btn-secondary my-4 show">Show</button>
+
+            </div>
+           
+
+            
+            <div class='my-2'>
+                <button id='back-button' class='btn-lg btn btn-secondary'>
+                    <i class="fas fa-arrow-left"></i>
+                    Back To News List
+                </button>
+            </div>
+
+            
+            <main id='news-list-place' class='my-4 flex-grow-1 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4'>
+                
+                <!-- Markup For One Item In List -->
+                <div class='cell py-3'>
+                    <div class="card shadow h-100">
+                        <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" class="card-img-top shadow" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Card title</h4>
+                            <p class='flex-grow-1 fs-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, porro incidunt sit pariatur atque accusantium sint suscipit perferendis quas libero!</p>
+                            <button class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- /Markup For One Item In List -->
+
+            </main>
+
+
+            <main id='one-news-place' class='flex-grow-1 col-lg-6 d-none'>
+
+                <!-- Markup For One Full Item -->
+                <div class='py-3'>
+                    <h1>Lorem ipsum dolor sit amet consectetur...</h1>
+                    <i>20/03/2020</i>
+                    <p>
+                        <i>Lorem ipsum dolor sit amet, consectetur...</i>
+                    </p>
+                    <img class='img-thumbnail' src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">
+                    <p>Lorem ipsum, dolor sit amet consectetur...</p>
+                    <a href="#" target="_blank" class="btn btn-primary">Read Original</a>
+                </div>
+                <!-- /Markup For One Full Item -->
+
+            </main>
+
+
+            <h5 class='text-center my-4'>
+                Copyright &copy; 
+                <script> document.write((new Date()).getFullYear()) </script> 
+            </h5>
+
+
+        </div>
+    </body>
+</html>
